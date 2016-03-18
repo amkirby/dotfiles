@@ -8,7 +8,7 @@
 ! URxvt*geometry: geom
 
 ! Use the specified colour as the windows background colour [default White]; option -bg.
-urxvt*background: black
+URxvt*background: black
 
 ! Use the specified colour as the windows foreground colour [default Black]; option -fg.
 URxvt*foreground: gray
@@ -17,8 +17,8 @@ URxvt*foreground: gray
 ! URxvt*colorn: colour
 
 ! blue
-urxvt*color4	: #3465A4
-urxvt*color12	: #729FCF
+URxvt*color4	: #3465A4
+URxvt*color12	: #729FCF
 
 ! 
 ! URxvt*colorBD: colour
@@ -73,7 +73,7 @@ urxvt*color12	: #729FCF
 
 ! Select the fonts to be used. This is a comma separated list of font names that are checked in order when trying to find glyphs for characters. The first font defines the cell size for characters; other fonts might be smaller, but not (in general) larger. A (hopefully) reasonable default font list
 ! urxvt.font: xft:DejaVu Sans Mono:pixelsize=12
-urxvt.font: xft:Source Code Pro:Regular:pixelsize=12
+URxvt.font: xft:Source Code Pro:Regular:pixelsize=12
 ! URxvt*font: fontlist
 
 ! URxvt*boldFont: fontlist
@@ -121,7 +121,7 @@ urxvt.font: xft:Source Code Pro:Regular:pixelsize=12
 ! URxvt*thickness: number
 
 ! True: enable the scrollbar [default]; option -sb. False: disable the scrollbar; option +sb.
-! URxvt*scrollBar: boolean
+URxvt*scrollBar: false
 
 ! True: place the scrollbar on the right of the window; option -sr.  False: place the scrollbar on the left of the window; option +sr.
 ! URxvt*scrollBar_right: boolean

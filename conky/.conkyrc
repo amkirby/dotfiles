@@ -63,8 +63,8 @@ TEXT
 
  [
   #{ "full_text" : "uptime ${uptime_short}", "color" : "\#ffffff" },
-  { "full_text" : "⬆ ${upspeed enp0s3}", "color" : "\#ffffff" },
-  { "full_text" : "⬇ ${downspeed enp0s3}", "color" : "\#ffffff" },
+  { "full_text" : "⬆ ${upspeed wlp3s0}", "color" : "\#ffffff" },
+  { "full_text" : "⬇ ${downspeed wlp3s0}", "color" : "\#ffffff" },
   #{ "full_text" : "/home ${fs_free /home}" , "color" : "\#ffffff" },
   { "full_text" : "/ ${fs_free /}", "color" : "\#ffffff" },
   { "full_text" : "ram ${memperc}%" , "color" : 

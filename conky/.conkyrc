@@ -63,13 +63,18 @@ TEXT
 
  [
   #{ "full_text" : "uptime ${uptime_short}", "color" : "\#ffffff" },
+  ${if_mpd_playing}
+    { "full_text" : "", "color" : "\#702528", "separator" : false },
+    { "full_text" : "${mpd_artist}", "separator" : false },
+    { "full_text" : "${mpd_title}", "separator" : false },
+  $endif
   { "full_text" : "", "color" : "\#702528", "separator" : false },
   { "full_text" : " ⬆ ${upspeed wlp3s0}", "color" : "\#ffffff", "separator":false },
   { "full_text" : "", "color" : "\#702528", "separator" : false },
   { "full_text" : " ⬇ ${downspeed wlp3s0}", "color" : "\#ffffff", "separator" : false },
   { "full_text" : "", "color" : "\#702528", "separator" : false },
   #{ "full_text" : "/home ${fs_free /home}" , "color" : "\#ffffff" },
-  { "full_text" : " / ${fs_free /}", "color" : "\#ffffff", "separator" : false },
+  { "full_text" : " / ${fs_free /}", "color" : "\#ffffff", "separator" : false },
   { "full_text" : "", "color" : "\#702528", "separator" : false },
   { "full_text" : " ${memperc}%" , "color" :
     ${if_match ${memperc}<90}"\#ffffff"${else}"\#ff0000"${endif}, "separator" : false },

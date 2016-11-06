@@ -155,6 +155,7 @@ bindsym $mod+Shift+r restart
 #========================================================#
 
 # resize window (you can also use the mouse for that)
+set $size 2
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
@@ -162,16 +163,16 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym j resize shrink width $size px or $size ppt
+        bindsym k resize grow height $size px or $size ppt
+        bindsym l resize shrink height $size px or $size ppt
+        bindsym semicolon resize grow width $size px or $size ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width $size px or $size ppt
+        bindsym Down resize grow height $size px or $size ppt
+        bindsym Up resize shrink height $size px or $size ppt
+        bindsym Right resize grow width $size px or $size ppt
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
@@ -191,7 +192,7 @@ bar {
 	font pango:Source Code Pro 12px, Awesome 8
 	status_command $HOME/.conky/conky_script.sh
 	position top
-	tray_output eDP1
+	tray_output primary
 
 	colors {
 	       background #222222
@@ -202,8 +203,8 @@ bar {
 #                         Custom Bindings                         #
 #=================================================================#
 
-# Custom keybindings
-bindsym $mod+F1 exec google-chrome-stable
+# Custom keybindings google-chrome-stable
+bindsym $mod+F1 exec firefox
 
 # Volume Control
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 5%+

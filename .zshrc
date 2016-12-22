@@ -122,3 +122,12 @@ alias py="python3"
 
 # open nautilus when using i3
 alias naut="nautilus --no-desktop&"
+
+# list upgradable packages apt
+alias aptl="apt list --upgradable"
+
+# restart network manager (sometimes helps w/ internet slowness)
+alias rnm="sudo systemctl restart network-manager"
+
+# open file in default application
+alias xopen="xdg-open"

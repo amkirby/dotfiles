@@ -131,3 +131,6 @@ alias rnm="sudo systemctl restart network-manager"
 
 # open file in default application
 alias xopen="xdg-open"
+
+#check changelog with apt
+alias aptc="apt changelog"

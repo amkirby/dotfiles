@@ -5,13 +5,13 @@
 ! URxvt*buffered: boolean
 
 ! Create the window with the specified X window geometry [default 80x24]; option -geometry.
-! URxvt*geometry: geom
+URxvt*geometry: 117x30
 
-! Use the specified colour as the windows background colour [default White]; option -bg.
-URxvt*background: #222222
+! Use the specified colour as the windows background colour [default White]; option -bg. #222222
+URxvt*background: #404040
 
-! Use the specified colour as the windows foreground colour [default Black]; option -fg.
-URxvt*foreground: gray
+! Use the specified colour as the windows foreground colour [default Black]; option -fg. gray
+URxvt*foreground: #AAAAAA
 
 ! Use the specified colour for the colour value n, where 0-7 corresponds to low-intensity (normal) colours and 8-15 corresponds to high-intensity (bold = bright foreground, blink = bright background) colours. The canonical names are as follows: 0=black, 1=red, 2=green, 3=yellow, 4=blue, 5=magenta,
 ! URxvt*colorn: colour
@@ -286,7 +286,7 @@ URxvt.keysym.Shift-Down: command:\033]721;1\007
 ! number of columns
 rofi.columns: 1
 ! location on screen
-rofi.location:          6
+rofi.location:          0
 ! user extended color scheme
 rofi.color-enabled:     true
 ! color scheme window   bg color       border color underline color
@@ -313,4 +313,4 @@ rofi.fake-transparency: true
 rofi.yoffset:           -20
 ! x offset relative to location
 rofi.xoffset:           0
-rofi.width:             1920
+rofi.width:             1000

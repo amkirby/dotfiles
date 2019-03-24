@@ -1,0 +1,9 @@
+* Bitmap fonts on ubuntu
+  - pertains to fonts like siji
+  - remove /etc/fonts/conf.d/70-no-bitmaps.conf
+  - symlink /etc/fonts/conf.avail/70-yes-bitmaps.conf into conf.d
+* i3
+** window classes
+   - use xprop
+** Polybar
+   - i3 workspace name needs to match in the polybar workspace name

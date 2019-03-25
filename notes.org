@@ -5,5 +5,31 @@
 * i3
 ** window classes
    - use xprop
+** packages used
+   - rofi
+   - feh
+** dependencies
+    - libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev
+      libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev
+      libxcb-randr0-dev libev-dev libxcb-cursor-dev
+      libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev
+      libxkbcommon-x11-dev autoconf libxcb-xrm0 libxcb-xrm-dev
+      automake libxcb-shape0-dev 
 ** Polybar
    - i3 workspace name needs to match in the polybar workspace name
+   - need to install polybar dependencies before installing i3 b/c the
+     i3-wm package will overwrite the i3-gaps install
+*** APT essential dependencies
+  - apt install build-essential git cmake cmake-data pkg-config
+    libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev
+    libxcb-composite0-dev python-xcbgen xcb-proto libxcb-image0-dev
+    libxcb-ewmh-dev libxcb-icccm4-dev 
+*** APT optional dependencies
+  - apt install libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev
+    libasound2-dev libpulse-dev i3-wm libjsoncpp-dev libmpdclient-dev
+    libcurl4-openssl-dev libnl-genl-3-dev
+*** siji font
+   - sudo dpkg-reconfigure fontconfig-config
+   - sudo rm /etc/fonts/conf.d/70-no-bitmaps.conf && fc-cache
+** xrandr set resolution
+   - xrandr --output <display> --mode <name for resolution mode>

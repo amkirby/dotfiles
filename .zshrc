@@ -49,7 +49,7 @@ plugins=(git zsh-syntax-highlighting)
 
 # User configuration
 
-export PATH="/snap/bin:/home/amkirby/bin:/home/amkirby/bin/android-studio/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/amkirby/bin"
+export PATH="/snap/bin:/home/amkirby/bin:/home/amkirby/bin/android-studio/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/amkirby/bin:/home/amkirby/.local/bin"
 
 export EDITOR='emacs'
 # export MANPATH="/usr/local/man:$MANPATH"

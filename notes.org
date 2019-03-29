@@ -15,6 +15,12 @@
       libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev
       libxkbcommon-x11-dev autoconf libxcb-xrm0 libxcb-xrm-dev
       automake libxcb-shape0-dev 
+** install commands *(within i3 directory)*
+  - autoreconf --force --install
+  - mkdir build && cd build
+  - ../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
+  - make
+  - sudo make install
 ** Polybar
    - i3 workspace name needs to match in the polybar workspace name
    - need to install polybar dependencies before installing i3 b/c the
@@ -28,6 +34,11 @@
   - apt install libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev
     libasound2-dev libpulse-dev i3-wm libjsoncpp-dev libmpdclient-dev
     libcurl4-openssl-dev libnl-genl-3-dev
+*** install commands *(within polybar directory)*
+  - mkdir build && cd build
+  - cmake ..
+  - make -j$(nproc)
+  - sudo make install
 *** siji font
    - sudo dpkg-reconfigure fontconfig-config
    - sudo rm /etc/fonts/conf.d/70-no-bitmaps.conf && fc-cache

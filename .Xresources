@@ -314,3 +314,6 @@ rofi.yoffset:           -20
 ! x offset relative to location
 rofi.xoffset:           0
 rofi.width:             1000
+
+
+*TkTheme:breeze-dark

@@ -134,3 +134,33 @@ alias xopen="xdg-open"
 
 #check changelog with apt
 alias aptc="apt changelog"
+
+# get HDMI sound output source back
+alias hdmiSound="pulseaudio -k"
+
+# personal git commands outside of oh-my-zsh
+alias gitSkip="git update-index --skip-worktree --"
+alias gitUnSkip="git update-index --no-skip-worktree --"
+alias lsGitSkip="git ls-files -v | grep ^S"
+alias stashConfig="git stash push --keep-index -m \"my config\""
+
+alias emacs="emacsclient -c -a ''"
+alias em="/usr/bin/emacs"
+alias nalu="nala list --upgradable"
+
+set TCLLIBPATH='/home/amkirby/Git/Checkbook/tkBreeze-master'
+
+# from .oh-my-zsh python plugin. only wanted this function and didn't want extra overhead of loading plugin
+# Remove python compiled byte-code and mypy/pytest cache in either the current
+# directory or in a list of specified directories (including sub directories).
+function pyclean() {
+    ZSH_PYCLEAN_PLACES=${*:-'.'}
+    find ${ZSH_PYCLEAN_PLACES} -type f -name "*.py[co]" -delete
+    find ${ZSH_PYCLEAN_PLACES} -type d -name "__pycache__" -delete
+    find ${ZSH_PYCLEAN_PLACES} -depth -type d -name ".mypy_cache" -exec rm -r "{}" +
+    find ${ZSH_PYCLEAN_PLACES} -depth -type d -name ".pytest_cache" -exec rm -r "{}" +
+}
+
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

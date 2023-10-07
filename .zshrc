@@ -145,9 +145,15 @@ alias gitUnSkip="git update-index --no-skip-worktree --"
 alias lsGitSkip="git ls-files -v | grep ^S"
 alias stashConfig="git stash push --keep-index -m \"my config\""
 
+PKG_MGR='nala'
 alias emacs="emacsclient -c -a ''"
 alias em="/usr/bin/emacs"
-alias nalu="nala list --upgradable"
+alias listUpdates="${PKG_MGR} list --upgradable"
+alias register="cd ${HOME}/Git/Checkbook"
+alias checkbook="python3 main.py"
+alias ll='exa --icons -lh'
+alias ls='exa --icons'
+alias la='exa --icons -lah'
 
 set TCLLIBPATH='/home/amkirby/Git/Checkbook/tkBreeze-master'
 
